@@ -5,15 +5,31 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ToDoListApp.UI"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="Auto"/>
-            <ColumnDefinition Width="Auto"/>
-            <ColumnDefinition Width="Auto"/>
-            <ColumnDefinition Width="Auto"/>
+        Title="MainWindow" Height="450" Width="400">
+    <StackPanel Margin="10,14,10,6">
+        <Label Content="ToDo App" FontSize="24" Background="{StaticResource Brewed Mustard}" />
+        <DockPanel>
+            <TextBox Margin="20,20,0,5" DockPanel.Dock="Left" Width="310"/>
+            <Label DockPanel.Dock="Right">
+                <Image Source="/Ressourcen/addIcon.png" Width="30" Margin="0,15,0,0"/>
+            </Label>
+        </DockPanel>
+        <DockPanel Margin="20,20,20,-5" >
+            <CheckBox DockPanel.Dock="Left" Content="{Binding }" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked" Padding="0,0,0,0" Margin="0,2,0,0"/>
+            <Label DockPanel.Dock="Left" Width="300" Content="First Box ToDo" Padding="10,0,0,0" Margin="0,0,0,2"/>
+            <Label DockPanel.Dock="Right">
+                <Image Source="/Ressourcen/deleteIcon.png" Width="20" Margin="0,-5,0,0" />
+            </Label>
+        </DockPanel>
+        <StackPanel Orientation="Horizontal" Margin="20,0,20,0">
+            <CheckBox Content="{Binding }" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked" Padding="0,0,0,0" Margin="0,2,0,0"/>
+            <Label Content="Second Box ToDo" Padding="10,0,0,0" Margin="0,0,0,2"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="20,0,20,0">
+            <CheckBox Content="{Binding }" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked" Padding="0,0,0,0" Margin="0,2,0,0"/>
+            <Label Content="Third Box ToDo" Padding="10,0,0,0" Margin="0,0,0,2"/>
+        </StackPanel>
 
-        </Grid.ColumnDefinitions>
-
-    </Grid>
+        <TextBlock Text="{Binding }" Margin="20,20,20,5"/>
+    </StackPanel>
 </Window>

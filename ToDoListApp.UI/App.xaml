@@ -4,6 +4,13 @@
              xmlns:local="clr-namespace:ToDoListApp.UI"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <SolidColorBrush x:Key="Biscay" Color="#303952"/>
+        <SolidColorBrush x:Key="Pencil Lead" Color="#596275"/>
+        <SolidColorBrush x:Key="Deep Rose" Color="#c44569"/>
+        <SolidColorBrush x:Key="Old Geranium" Color="#cf6a87"/>
+        <SolidColorBrush x:Key="Porcelain Rose" Color="#e66767"/>
+        <SolidColorBrush x:Key="Apple Valley" Color="#ea8685"/>
+        <SolidColorBrush x:Key="Tigerlily" Color="#e15f41"/>
+        <SolidColorBrush x:Key="Brewed Mustard" Color="#e77f67"/>
     </Application.Resources>
 </Application>
